@@ -1,0 +1,100 @@
+body {
+    background: url('../../assets/background.jpeg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the full screen */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  
+  .container {
+    background: white;
+  
+    width: 100vh;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #2e7d32; /* Dark Green */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Creates more space */
+    gap: 40px; /* Adds extra space between left & right columns */
+  }
+  
+  .left-column, .right-column {
+    width: 45%; /* Adjust column width for better spacing */
+  }
+  
+  
+  label {
+    display: block;
+    font-weight: bold;
+    color: #388e3c; /* Medium Green */
+    margin-top: 10px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #c8e6c9;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #f1f8e9; /* Light Green Input */
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border-color: #2e7d32;
+  }
+  
+  button {
+    background-color: #4caf50; /* Green Button */
+    color: white;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2e7d32;
+  }
+  
+  p {
+    color: red;
+    font-size: 14px;
+    margin: 5px 0 0;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  @media (max-width: 600px) {
+    .form-container {
+      flex-direction: column;
+    }
+    .left-column, .right-column {
+      width: 100%;
+    }
+  }
+  
