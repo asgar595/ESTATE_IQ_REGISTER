@@ -1,5 +1,5 @@
 body {
-    background: url('../../assets/background.jpeg') no-repeat center center fixed;
+    background: url('/background.jpeg')  no-repeat center center fixed;
     background-size: cover; /* Ensures the image covers the full screen */
     font-family: 'Arial', sans-serif;
     display: flex;
